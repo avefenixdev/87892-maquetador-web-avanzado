@@ -66,7 +66,20 @@ body {
     url('/imgs/tucan.webp');
 }
 
+/* https://gradients.app/es/gradient */
+/* https://uigradients.com/ */
+/* https://cssgradient.io/ */
 .background-5 {
   background-color: #0f5739; /* fallback */
   background-image: linear-gradient(90deg, #0f5739, #3d8e66, #45c9a4, #46b5a9, #52c9eb);
+}
+
+.background-6 {
+  width: 1400px;
+  height: 900px;
+  background-color: burlywood;
+  background-image: url('/imgs/pajarito-sobre-tronquito.jpg');
+  background-position: 0 -350px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
