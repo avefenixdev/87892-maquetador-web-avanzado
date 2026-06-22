@@ -1,0 +1,72 @@
+/* reset */
+* {
+  /* selector universal -> seleciona todas etiquetas html */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*                   RRGGBB */
+  /*                   RGB */
+  background-color: #ddd;
+  font-size: 100%;
+}
+
+.background {
+  margin-block: 50px;
+  margin-inline: auto;
+  /* margin: 50px auto; */
+  /* margin-top: 50px;
+  margin-bottom: 50px; */
+  /* margin: 50px 0 50px 0; */
+  /* margin: 50px 0; */
+  background-color: crimson;
+  width: 1000px;
+  height: 400px;
+}
+
+.background-1 {
+  background-color: green;
+  background-image: url('https://images.unsplash.com/photo-1759681770982-313332e7f42c?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.background-2 {
+  background-color: burlywood;
+  background-image: url('/imgs/gatito-acostado.webp'); /* Siempre conviene trabajar de manera relativa */
+  /*                x      y */
+  background-size: 200px auto;
+  /* background-size: auto 100px; */
+  background-repeat: repeat; /* repeat (default) | repeat-x:horizontal | repeat-y:vertical | no-repeat */
+}
+
+.background-3 {
+  background-color: darkolivegreen;
+  background-image: url('/imgs/tucan.webp'), url('/imgs/loro.webp'), url('/imgs/pajarito.webp');
+  background-size:
+    200px auto,
+    200px auto,
+    100px auto;
+  background-repeat: no-repeat;
+  /* background-position:
+    top right,
+    top left,
+    center center; */
+  background-position:
+  /* x    y */
+    top right,
+    center center,
+    100px 100px;
+}
+
+.background-4 {
+  background-color: blue;
+  background-image:
+    linear-gradient(100deg, rgba(0, 0, 255, 0.32), rgba(255, 166, 0, 0.325), crimson),
+    url('/imgs/tucan.webp');
+}
+
+.background-5 {
+  background-color: #0f5739; /* fallback */
+  background-image: linear-gradient(90deg, #0f5739, #3d8e66, #45c9a4, #46b5a9, #52c9eb);
+}
