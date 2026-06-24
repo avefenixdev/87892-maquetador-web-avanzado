@@ -12,3 +12,48 @@ body {
   background-color: #ddd;
   font-size: 100%;
 }
+
+.contenedor {
+  width: 37.5rem;
+  height: 37.5rem;
+  margin: 1.25rem auto;
+  border: 0.3125rem solid gold;
+
+  position: relative;
+}
+
+.caja {
+  background-color: crimson;
+  width: 100px;
+  height: 100px;
+  text-align: center; /* centrado horizontal */
+  line-height: 100px; /* centrado vertical */
+  font-weight: bold;
+  color: white;
+}
+
+.static {
+  background-color: darkmagenta;
+  position: static;
+  top: 100px; /* No funciona */
+  bottom: 200px; /* No funciona */
+  right: 400px; /* No funciona */
+  left: 500px; /* No funciona */
+}
+
+.relative {
+  background-color: darkgreen;
+  position: relative;
+  /* top: 20px; */ /* y */
+  /*  left: 20px; */ /* x */
+  /* right: 20px; */ /* x */
+  /*  bottom: 20px;  */ /* y */
+}
+
+.absolute {
+  background-color: darkslateblue;
+  position: absolute;
+  right: -50px;
+  top: -50px;
+  border-radius: 50%;
+}
