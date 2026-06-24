@@ -66,3 +66,17 @@ body {
   bottom: 30px;
   right: 30px;
 }
+
+.fixed-whatsapp {
+  background-color: #25d366;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 70px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
