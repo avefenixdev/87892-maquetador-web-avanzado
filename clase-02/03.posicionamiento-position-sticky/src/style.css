@@ -1,0 +1,30 @@
+/* reset */
+* {
+  /* selector universal -> seleciona todas etiquetas html */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*                   RRGGBB */
+  /*                   RGB */
+  background-color: #333;
+  color: #eee;
+  font-size: 100%;
+
+  height: 3000px;
+}
+
+.header {
+  text-align: center;
+  height: 9.375rem;
+  background-color: pink;
+  color: #222;
+}
+/* Sticky -> Se comporta como el relative inicialmeente y luego como un fixed */
+.article-title {
+  background-color: purple;
+  position: sticky;
+  top: 0px;
+}
