@@ -1,3 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+@font-face {
+  font-family: 'Pokemon Hollow';
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local('Pokemon Hollow'),
+    url('/fonts/Pokemon-Hollow.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Pokemon Solid';
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local('Pokemon Solid'),
+    url('/fonts/Pokemon-Solid.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Action Man';
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local('Action Man'),
+    url('/fonts/Action-Man.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Action Man';
+  font-style: italic;
+  font-weight: 300;
+  src:
+    local('Action Man'),
+    url('/fonts/Action-Man-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Action Man';
+  font-style: normal;
+  font-weight: 900;
+  src:
+    local('Action Man'),
+    url('/fonts/Action-Man-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Action Man';
+  font-style: italic;
+  font-weight: 900;
+  src:
+    local('Action Man'),
+    url('/fonts/Action-Man-Bold-Italic.ttf') format('truetype');
+}
+
 /* reset */
 * {
   /* selector universal -> seleciona todas etiquetas html */
@@ -16,3 +72,25 @@ body {
 .tipo-seguras {
   font-family: Arial, Helvetica, sans-serif; /* fallback */
 }
+
+.tipo-google {
+  font-family: 'Google Sans', sans-serif;
+}
+
+.tipo-custom {
+  font-family: 'Pokemon Hollow', sans-serif;
+}
+
+.tipo-custom-action {
+  font-family: 'Action Man', sans-serif;
+  font-style: italic;
+  font-weight: 900;
+}
+
+/*
+woff2 -> formato -> woff2 (Compatible) -> Google
+woff -> formato -> woff (Muy Compatible)
+ttf -> formato -> truetype (Muy compatible)
+otf -> formato -> opentype (Muy compatible)
+eot -> formato -> embedded-opentype (compatible)
+*/
