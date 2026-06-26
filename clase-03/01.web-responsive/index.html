@@ -13,7 +13,9 @@
       <li>Mobile First</li>
     </ul>
 
-    <img src="/imgs/df-mf.png" alt="Mobile vs Desktop">
+    <div class="w-400">
+      <img class="img-fluid" src="/imgs/df-mf.png" alt="Mobile vs Desktop" />
+    </div>
 
     <h2>Mobile First</h2>
 
@@ -21,23 +23,38 @@
     <ul>
       <li>
         <h3>Fluid Design</h3>
-        <p>Utiliza porcentajes para definir el tamaño de los elementos, permitiendo que esto se adapten al contenedor, pero en pantallas grandes los mismos se estiran demasiado.
-        <br>
-        También existen una variante llamada <strong>Liquid Design</strong> que establece el uso de maximos y minimos, pero esto genera espacios demasiados grades entre elementos.
+        <p>
+          Utiliza porcentajes para definir el tamaño de los elementos,
+          permitiendo que esto se adapten al contenedor, pero en pantallas
+          grandes los mismos se estiran demasiado.
+          <br />
+          También existen una variante llamada
+          <strong>Liquid Design</strong> que establece el uso de maximos y
+          minimos, pero esto genera espacios demasiados grades entre elementos.
         </p>
       </li>
       <li>
         <h3>Adaptive Design</h3>
-        <p>Consiste en diseñar una pagina para que cada tipo de dispositivo en el que se visualice el sitio, pero este caso los contenidos se repiten y son independentes uno de otro.
-        <br>
-        Esta propuesta es ideal para clientes con bajo presupuesto, ya que generalmente se utilzian 2 versiones de sitio principal (desktop) y se utilizan herramientas para el redireccionamiento.
+        <p>
+          Consiste en diseñar una pagina para que cada tipo de dispositivo en el
+          que se visualice el sitio, pero este caso los contenidos se repiten y
+          son independentes uno de otro.
+          <br />
+          Esta propuesta es ideal para clientes con bajo presupuesto, ya que
+          generalmente se utilzian 2 versiones de sitio principal (desktop) y se
+          utilizan herramientas para el redireccionamiento.
         </p>
       </li>
       <li>
         <h3>Resposive Design</h3>
-        <p>Diseño utilizando multimedia flexible, un sistema de grillas adaptable e impelemtenta el concepto <em>one web for all</em> para evitar la duplibicidad de contenido.
-        <br>
-        Este tipo de diseño debe ser planificado desde la vista mobile y de ser posible utilizando los contenidos finales para lograr un mejor resultado a la hora de integrar los contenidoas.
+        <p>
+          Diseño utilizando multimedia flexible, un sistema de grillas adaptable
+          e impelemtenta el concepto <em>one web for all</em> para evitar la
+          duplibicidad de contenido.
+          <br />
+          Este tipo de diseño debe ser planificado desde la vista mobile y de
+          ser posible utilizando los contenidos finales para lograr un mejor
+          resultado a la hora de integrar los contenidoas.
         </p>
       </li>
     </ul>
@@ -46,6 +63,12 @@
 
     <h3>Diseño flexible</h3>
     <h3>Diseño basado en rejillas</h3>
+    <p>
+      <a
+        href="https://www.figma.com/es-es/comunidad/plugin/1235599430244558186/12-column-grid"
+        >Grilla de 12 de Figma</a
+      >
+    </p>
     <h3>Diseño de las imagenes (imagenes adaptables)</h3>
     <h3>Medias Queries (CSS)</h3>
     <h3>Trabajo de tipografias con medidas relativas</h3>
@@ -53,12 +76,23 @@
     <h2>Etiqueta Viewport</h2>
 
     <a href="https://whatismyviewport.com/">¿Cual es mi tamaño de viewport?</a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag">MDN Meta tag</a>
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag"
+      >MDN Meta tag</a
+    >
 
     <ul>
-      <li>initial-scale: Establece el zoom inicial de la pagina normalemente 1</li>
-      <li>minimum-scale y maximum-scale: Establece nivel maximo y minimo de zoom (1 a 10)</li>
-      <li>user-scalable: Define si el usuario podra o no hacer zoom sobre el pagina (1, 0, no, yes)</li>
+      <li>
+        initial-scale: Establece el zoom inicial de la pagina normalemente 1
+      </li>
+      <li>
+        minimum-scale y maximum-scale: Establece nivel maximo y minimo de zoom
+        (1 a 10)
+      </li>
+      <li>
+        user-scalable (default: yes): Define si el usuario podra o no hacer zoom
+        sobre el pagina (1, 0, no, yes)
+      </li>
     </ul>
 
     <h2>Tipos de medidas (unidades de medida)</h2>
@@ -66,7 +100,12 @@
     <ul>
       <li>
         <h3>Unidades Absolutas</h3>
-        <p>Son aquellas cuyo valor es independente al medio en el que se reproduce, es decir, que siempre miden lo mismo. Se utilizan normalmente para establecer limites a los tamaños de caja y de esta evitar tamaños demasiado grandes o chicos.</p>
+        <p>
+          Son aquellas cuyo valor es independente al medio en el que se
+          reproduce, es decir, que siempre miden lo mismo. Se utilizan
+          normalmente para establecer limites a los tamaños de caja y de esta
+          evitar tamaños demasiado grandes o chicos.
+        </p>
 
         <ul>
           <li>
@@ -94,7 +133,12 @@
       </li>
       <li>
         <h3>Unidades Relativas</h3>
-        <p>Son aquellas que dependen de otro elemento para establecer su tamaño y por lo tanto, no siempre miden lo mismo. Se utilizan principalemnte para definir los tamaño de caja, asi como tambien el tamaño  de las tipografias utilizadas</p>
+        <p>
+          Son aquellas que dependen de otro elemento para establecer su tamaño y
+          por lo tanto, no siempre miden lo mismo. Se utilizan principalemnte
+          para definir los tamaño de caja, asi como tambien el tamaño de las
+          tipografias utilizadas
+        </p>
         <ul>
           <li>
             <h4>Tamaño</h4>
@@ -120,7 +164,12 @@
       </li>
       <li>
         <h3>Unidades Flexibles</h3>
-        <p>Son aquellas que basan su tamaño en la diemesion de la ventana (viewport) donde se visualiza la pagina web. Se utitlizan para implementar tipografias adaptables o definir alturas de caja de algunos elementos</p>
+        <p>
+          Son aquellas que basan su tamaño en la diemesion de la ventana
+          (viewport) donde se visualiza la pagina web. Se utitlizan para
+          implementar tipografias adaptables o definir alturas de caja de
+          algunos elementos
+        </p>
 
         <ul>
           <li>
@@ -133,8 +182,8 @@
           <li>
             <h4>Disposicion</h4>
             <ul>
-              <li>vw [viewport width] (ancho del viewport)</li>
-              <li>vh [viewport height] (alto del viewport)</li>
+              <li>* vw [viewport width] (ancho del viewport)</li>
+              <li>* vh [viewport height] (alto del viewport)</li>
             </ul>
           </li>
         </ul>
