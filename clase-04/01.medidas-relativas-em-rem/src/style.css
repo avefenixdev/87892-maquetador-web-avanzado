@@ -4,10 +4,30 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 100%; /* 16px -> la hoja de estilos del navegador -> 100% -> 16px */
+}
+
+h3 {
+  font-size: 1em;
+}
+
 /* UNIDADES RELATIVAS */
 /* ! EM (em) element */
 /* EM  es relativa primero a su <etiqueta>, <contenedora>, <body>, <html> */
 /* A la altura de la M mayuculas */
+
+article.opinion {
+  font-size: 2em; /* 16px x 2 => 32px */
+}
+
+h3.titulo {
+  /* font-size: 10px;  */ /* 16px x 3 => 48px */
+  border: 1em solid red; /* 16px x 1  => 16px */
+  padding: 1em;
+  margin: 1em;
+  border-radius: 10em;
+}
 
 /* ! REM (rem) -> root element */
 /* REM es relativa a la etiqueta root del documento <html> */
