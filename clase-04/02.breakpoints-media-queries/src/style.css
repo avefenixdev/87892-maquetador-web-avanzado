@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%; /* 16px -> la hoja de estilos del navegador -> 100% -> 16px */
+}
+
+/* https://getbootstrap.com/docs/5.3/layout/breakpoints/ */
+/* https://v1.tailwindcss.com/docs/breakpoints */
+
+/* --------------------------------- */
+/* --------------------------------- */
+/* ! IDEAL */
+/* * Breakpoint	        Dimensions */
+/* Extra                  <576px     
+   Small	                ≥576px
+   Medium	                ≥768px
+   Large	                ≥992px
+   Extra Large            ≥1200px
+   Extra Extra Large      ≥1400px
+*/
+
+/* ! REAL */
+/* * Breakpoint	        Dimensions */
+/* celus	                ≥576px
+   Tablet/Netbook         ≥992px
+   PC/TV                 ≥1400px
+*/
+
+/* ! Economico */
+/* * Breakpoint	        Dimensions */
+/* Celus/Tables peques    ≥576px  
+   Notebook/PC/TV        ≥1200px
+*/
+
+/* !-------------------------------------- */
+/* ! -------------------------------------- */
+/* Cuando pensamos el sitio mobile first la primer media. no es necesario colocarle dentro de la directiva */
+/* ! REAL */
+/* * Breakpoint	        Dimensions */
+/* celus	                ≥576px <<<<--- no necesita media
+   Tablet/Netbook         ≥992px
+   PC/TV                 ≥1400px
+*/
+
+/* ! Celus y tablets peques */
+/* screen dispositivo de pantalla digital */
+/* @media screen and (min-width: 576px) {} */
+
+/* ? (MOBILE FIRST) Estado inicial en dispositivo pequeño (celu, table peques) */
+h1 {
+  color: lightblue;
+  font-size: 3em;
+}
+
+main {
+  background-color: lightsalmon;
+  padding: 0.625rem;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  background-color: darkgoldenrod;
+  margin-bottom: 1.25rem;
+}
+
+.especial {
+   display: none;
+  /* visibility: hidden; */
+}
+
+/* ! Tablet grande y notebook, pc peques */
+@media screen and (min-width: 992px) {
+  h1 {
+    color: lightsalmon;
+    border: 2px solid orange;
+    margin-top: 20px;
+  }
+
+  main {
+    flex-direction: row;
+    /* column-gap: 1.25rem; */
+  }
+
+  section {
+    margin-bottom: unset;
+    margin-right: 1.25rem;
+  }
+  .sin-margin {
+    margin: unset;
+  }
+  .especial {
+    display: block;
+  }
+}
+
+/* ! PC grandes y Televisores */
+@media screen and (min-width: 1400px) {
+  h1 {
+    color: lightgreen;
+    margin-top: unset;
+  }
+
+  main {
+    flex-direction: column;
+    row-gap: 1.25rem;
+  }
+  section {
+    margin: unset;
+  }
+}
