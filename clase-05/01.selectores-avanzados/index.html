@@ -38,6 +38,75 @@
 
     <h2>Otro títulito</h2> -->
 
+    <!-- ! -------------------------------------------- -->
+    <!-- ! Selector descendiente directo (hijo directo) -->
+    <!-- ! -------------------------------------------- -->
+
+    <h3>Selector descendiente directo (hijo directo)</h3>
+
+    <!-- p{Hola soy un texto}>strong{con algo importante} -->
+    <p>Hola soy un texto <strong>con algo importante</strong></p>
+
+    <!-- 
+    section#importante.seccion-roja>article+article.destacado+article+article.destacado -->
+
+    <section id="importante" class="seccion-roja">
+      <article>Primer título</article>
+      <article class="destacado">Segundo título</article>
+      <article>Tercer título</article>
+      <article class="destacado">Cuarto título</article>
+    </section>
+
+    <!-- ! -------------------------------------------- -->
+    <!-- ! Selector de hermano adyacentes +             -->
+    <!-- ! -------------------------------------------- -->
+
+    <!-- Permite selecionar únicamente elementos que siguen del primer elemento de referencia -->
+    <h3>Selector de hermano adyacentes +</h3>
+
+    <!-- div>p+span+h4+span+h5 -->
+    <div>
+      <p>Lorem, ipsum dolor.</p>
+      <span>Lorem ipsum dolor sit amet.</span>
+      <h4>Lorem, ipsum.</h4>
+      <span
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+        iusto.</span
+      >
+      <h5>Lorem ipsum dolor sit amet.</h5>
+    </div>
+
+    <!-- ! ----------------------------------------- -->
+    <!-- ! Selector de hermanos general ~ -->
+    <!-- ! ----------------------------------------- -->
+
+    <!-- div>p.parrafito+p>span^h4+h5+h5 -->
+    <div>
+      <p class="parrafito">Lorem, ipsum dolor.</p>
+      <p><span>Lorem ipsum dolor sit amet.</span></p>
+      <h4>Genial</h4>
+      <h5>Todo piola</h5>
+      <h5>Chauuuuu chauuuuuu</h5>
+    </div>
+
+    <div>
+      <p class="parrafito">Lorem ipsum dolor sit.</p>
+      <h6>Holis</h6>
+      <h6>Chauchis</h6>
+      <h6>Loquis!</h6>
+      <h5>Lorem, ipsum.</h5>
+      <div>
+        <h5>Lorem, ipsum.</h5>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- ! ----------------------------------------- -->
+    <!-- ! Selector de hijo -->
+    <!-- ! ---------------------------------------- -->
+    <h3>Selector de hijo</h3>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

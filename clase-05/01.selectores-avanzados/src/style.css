@@ -68,6 +68,47 @@ a[href="https://google.com.ar"] {
   color: darkorange;
 }
 
+/* Selectores | combinadores y separadores */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Selectors */
+
+/* ! Selector descendiente directo (hijo directo) */
+
+p > strong {
+  color: greenyellow;
+  background-color: black;
+}
+
+section#importante.seccion-roja > article {
+  background-color: red;
+  width: 80%;
+  height: 6.25rem;
+  border: 0.0625rem solid black;
+  margin: 0.3125rem;
+}
+
+section#importante.seccion-roja > article.destacado {
+  background-color: blueviolet;
+}
+
+/* ! Selector de hermano adyacentes + */
+/* el span que está al lado del p */
+p + span {
+  font-weight: bolder;
+  color: darkgreen;
+}
+
+span + h5 {
+  color: palevioletred;
+}
+
+/* ! Selector de hermanos general ~ */
+/* alt + 126 -> virgulilla */
+p.parrafito ~ h5 {
+  color: orange;
+}
+
+/* ! selector de hijo */
+
 /* etiquetas 0 0 0 1 */
 /* clases    0 0 1 0 */
 /* id        0 1 0 0 */
