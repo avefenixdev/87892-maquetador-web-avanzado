@@ -8,6 +8,34 @@
   <body>
     <h1 class="color-dorado subrayado">Pseudoclases</h1>
 
+    <div class="contenedor">
+      <!-- .grupo>h2{Primer y último elemento}+.parrafos>p*3 -->
+      <div class="grupo">
+        <h2>Primer y último elemento</h2>
+        <div class="parrafos">
+          <p>Soy el primer parrafo</p>
+          <p>Soy el segundo parrafo</p>
+          <p>Soy el tercer parrafo</p>
+        </div>
+      </div>
+      <!-- .grupo -->
+
+      <!-- .grupo>h2{Primer y último elemento según tipo}+.elementos>div+p+span+p+div+div -->
+      <div class="grupo">
+        <h2>Primer y último elemento según tipo</h2>
+        <div class="elementos">
+          <div>Hola soy un div</div>
+          <p>Soy el primer parrafo</p>
+          <span>Hola soy un span</span>
+          <p>Soy el segundo parrafo</p>
+          <div>Soy el anteúltimo div</div>
+          <div>Soy el último div</div>
+        </div>
+      </div>
+      <!-- .grupo -->
+    </div>
+    <!-- .contenedor -->
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

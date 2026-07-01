@@ -24,3 +24,23 @@ html {
 body {
   background-color: var(--color-fondo-base, red); /* var(varible, fallback) */
 }
+
+.contenedor {
+  background-color: #bbb;
+  width: 70vw;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* : <--- indica que estoy en presencia de una pseudoclse */
+
+/* ! :first-child | :last-child */
+/* el primero de los p dentro de clase parrafos */
+
+.parrafos p:first-child,
+.parrafos p:last-child {
+  color: crimson;
+}
+
+/* ! :first-of-type | :last-of-type */
+
