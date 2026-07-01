@@ -13,6 +13,7 @@
   --ciento-por-ciento: 100%;
   --color-fondo-base: #eee;
   --tamanio-base: 2em;
+  --rosa-clarito: #e4a8b2;
 }
 
 /* etiqueta */
@@ -33,6 +34,38 @@ h1,
 h2 {
   --tamanio-base: 3em; /* custom property es local (regla h1, h2) */
   font-size: var(--tamanio-base);
+}
+/* id (#) */
+#seccion {
+  background-color: #ba92e0;
+  border: 0.25rem solid var(--rosa-clarito);
+}
+
+/* atributo [] */
+[href] {
+  text-decoration: none;
+}
+
+a[href="https://google.com.ar"] {
+  background-color: var(--rosa-clarito);
+}
+
+[class] {
+  background-color: #333;
+  color: white;
+}
+/* Seleciona todos los elementos que comiencen con el valor del atributo href -> https */
+[href^="https"] {
+  background-color: olive;
+}
+/* Seleciona todos los elementos que comiencen con el valor del atributo href -> 5173 */
+[href$="5173"] {
+  background-color: blue;
+  color: white;
+}
+/* Que contengan la cadena '.com.ar' en el atributo href */
+[href*=".com.ar"] {
+  color: darkorange;
 }
 
 /* etiquetas 0 0 0 1 */
