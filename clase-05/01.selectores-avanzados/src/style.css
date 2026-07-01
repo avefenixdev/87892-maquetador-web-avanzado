@@ -7,9 +7,32 @@
   box-sizing: border-box;
   /* border: 1px solid crimson; */
 }
-
+/* Custom properties (Variables globales a toda la hoja de estilos) */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties */
 :root {
+  --ciento-por-ciento: 100%;
+  --color-fondo-base: #eee;
+  --tamanio-base: 2em;
+}
 
+/* etiqueta */
+html {
+  font-size: var(--ciento-por-ciento);
+}
+
+body {
+  background-color: var(--color-fondo-base, red); /* var(varible, fallback) */
+}
+
+/* clase (.) */
+.borde {
+  border: 0.2rem solid blueviolet;
+}
+
+h1,
+h2 {
+  --tamanio-base: 3em; /* custom property es local (regla h1, h2) */
+  font-size: var(--tamanio-base);
 }
 
 /* etiquetas 0 0 0 1 */
@@ -18,6 +41,7 @@
 /* linea     1 0 0 0 */
 
 /* Cascada y Especificidad */
+/* https://specificity.keegan.st/ */
 /* .color-dorado.subrayado {
   color: darkorange;
 }
@@ -48,14 +72,6 @@ h1.color-dorado {
 .subrayado {
   text-decoration: underline;
 } */
-
-html {
-    font-size: 100%;
-}
-
-
-.borde {
-}
 
 /* h1.color-dorado.subrayado {
   text-decoration: none;
