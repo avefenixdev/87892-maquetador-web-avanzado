@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Reset (Reinicia los estilos por defecto del navegador) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid crimson; */
+}
+/* Custom properties (Variables globales a toda la hoja de estilos) */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties */
+:root {
+  --ciento-por-ciento: 100%;
+  --color-fondo-base: #eee;
+  --tamanio-base: 2em;
+  --rosa-clarito: #e4a8b2;
+}
+
+/* etiqueta */
+html {
+  font-size: var(--ciento-por-ciento);
+}
+
+body {
+  background-color: var(--color-fondo-base, red); /* var(varible, fallback) */
+}
