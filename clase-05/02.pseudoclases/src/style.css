@@ -55,3 +55,19 @@ body {
 .elementos p:first-of-type {
   background-color: darkred;
 }
+
+/* !  :nth-child() / :nth-last-child() */
+
+.lista li:nth-child(2),
+.lista li:nth-child(7),
+.lista li:nth-child(5) {
+  color: darkmagenta;
+}
+
+/* .lista li:nth-child(7) {
+  color: darkmagenta;
+}
+
+.lista li:nth-child(5) {
+  color: darkmagenta;
+} */
