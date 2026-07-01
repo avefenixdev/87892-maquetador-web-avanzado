@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Reset (Reinicia los estilos por defecto del navegador) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid crimson; */
+}
+
+:root {
+
+}
+
+/* etiquetas 0 0 0 1 */
+/* clases    0 0 1 0 */
+/* id        0 1 0 0 */
+/* linea     1 0 0 0 */
+
+/* Cascada y Especificidad */
+/* .color-dorado.subrayado {
+  color: darkorange;
+}
+
+h1 {
+  color: green;
+}
+
+h1 {
+  color: blue;
+}
+
+h1 {
+  color: pink;
+  color: red;
+  margin: 20px;
+  margin-top: 10px;
+}
+
+h1.color-dorado {
+  color: gold;
+}
+
+.color-dorado {
+  color: darkgoldenrod;
+}
+
+.subrayado {
+  text-decoration: underline;
+} */
+
+html {
+    font-size: 100%;
+}
+
+
+.borde {
+}
+
+/* h1.color-dorado.subrayado {
+  text-decoration: none;
+  color: blue;
+}
+
+h2 {
+  color: red;
+}
+
+h2 {
+  color: green;
+}
+
+section h2 {
+  color: blue;
+}
+
+div section h2 {
+  color: darkblue;
+} */
+
+/* NO USAR IMPORTANT */
+/* h2 {
+  color: crimson !important;
+}
+
+section h2 {
+  color: chartreuse !important;
+} */
