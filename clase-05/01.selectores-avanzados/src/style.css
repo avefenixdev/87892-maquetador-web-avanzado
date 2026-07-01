@@ -108,6 +108,12 @@ p.parrafito ~ h5 {
 }
 
 /* ! selector de hijo */
+/* Me permite selecionar a todos los hijos que esten dentro del padre */
+
+/* todos los h6 que estén dentro del div */
+div.selector-hijo h6 {
+  background-color: blueviolet;
+}
 
 /* etiquetas 0 0 0 1 */
 /* clases    0 0 1 0 */
