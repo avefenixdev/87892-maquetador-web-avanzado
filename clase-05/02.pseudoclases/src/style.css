@@ -44,3 +44,14 @@ body {
 
 /* ! :first-of-type | :last-of-type */
 
+.elementos div:first-of-type {
+  background-color: darkgreen;
+}
+
+.elementos div:last-of-type {
+  background-color: darkorange;
+}
+
+.elementos p:first-of-type {
+  background-color: darkred;
+}
