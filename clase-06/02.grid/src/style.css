@@ -18,7 +18,7 @@
 
 /* etiqueta */
 html {
-  font-size: var(--ciento-por-ciento);
+  font-size: var(--ciento-por-ciento); /* 16px */
 }
 
 body {
@@ -27,5 +27,32 @@ body {
 
 /* Para aplicar CSS GRID tengo que hacerlo sobre el padre (como flexbox) */
 .contenedor {
-  
+  display: grid;
+  margin: 2rem; /* 32px */
+  background-color: #ffeadd;
+  /* entre los tracks tengo las lines (líneas */
+  /* ! columnas (tracks) */
+  /* grid-template-columns: 5rem 5rem 5rem 5rem; */
+  /* una nueva unidad -> fracción -> 1fr | .5fr | 3fr */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+  /* grid-template-columns: repeat(5, 1fr); */
+  /* grid-template-columns: 1fr 1fr 2fr 2fr 2fr; */
+  grid-template-columns: repeat(2, 1fr) repeat(3, 2fr);
+
+  /* ! filas (tracks) */
+  /* grid-template-rows: 1fr 1fr 2fr; */
+  grid-template-rows: repeat(2, 1fr) 2fr 3fr;
+
+  /* Me permite agregarle espacios entre elementos. */
+  /* column-gap: .5rem;
+  row-gap: .5rem; */
+  gap: .5rem;
+}
+
+.elemento {
+  background-color: #ff6666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 10px; */ /* ! NO */
 }
