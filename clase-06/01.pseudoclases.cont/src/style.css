@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Reset (Reinicia los estilos por defecto del navegador) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid crimson; */
+}
+/* Custom properties (Variables globales a toda la hoja de estilos) */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties */
+:root {
+  --ciento-por-ciento: 100%;
+  --color-fondo-base: #eee;
+  --tamanio-base: 2em;
+  --rosa-clarito: #e4a8b2;
+}
+
+/* etiqueta */
+html {
+  font-size: var(--ciento-por-ciento);
+}
+
+body {
+  background-color: var(--color-fondo-base, red); /* var(varible, fallback) */
+}
+
+.contenedor {
+  background-color: #bbb;
+  width: 70vw;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* : <--- indica que estoy en presencia de una pseudoclse */
+
+/* ! :first-child | :last-child */
+/* el primero de los p dentro de clase parrafos */
+
+.parrafos p:first-child,
+.parrafos p:last-child {
+  color: crimson;
+}
+
+/* ! :first-of-type | :last-of-type */
+
+.elementos div:first-of-type {
+  background-color: darkgreen;
+}
+
+.elementos div:last-of-type {
+  background-color: darkorange;
+}
+
+.elementos p:first-of-type {
+  background-color: darkred;
+}
+
+/* !  :nth-child() / :nth-last-child() */
+
+/* .lista li:nth-child(2),
+.lista li:nth-child(7),
+.lista li:nth-child(5) {
+  color: darkmagenta;
+} */
+
+/* .lista li:nth-last-child(6) {
+  color: lightsalmon;
+} */
+/* 2n -> pares */
+/* .lista li:nth-child(2n) { 
+  color: blueviolet;
+} */
+/* 2n+1 -> impares */
+/* +1 o -1 */
+
+/* .lista li:nth-child(2n+1) { 
+  color: lightsalmon;
+} */
+
+/* odd -> impares  */
+/* even -> pares */
+.lista li:nth-child(even) { 
+  color: lightsalmon;
+}
+
+/* .lista li:nth-child(7) {
+  color: darkmagenta;
+}
+
+.lista li:nth-child(5) {
+  color: darkmagenta;
+} */
+
+/* ! :nth-of-type() | :nth-last-of-type() */
+
+.lista-grupo div:nth-of-type(1) {
+  background-color: blueviolet;
+}
+.lista-grupo p:nth-last-of-type(2) {
+  background-color: darkred;
+}
+
+.lista-grupo h4:nth-last-of-type(1) {
+  background-color: royalblue;
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudoclases</title>
+  </head>
+  <body>
+    <h1 class="color-dorado subrayado">Pseudoclases</h1>
+
+    <div class="contenedor">
+      <!-- .grupo>h2{Primer y último elemento}+.parrafos>p*3 -->
+      <div class="grupo">
+        <h2>Primer y último elemento</h2>
+        <div class="parrafos">
+          <p>Soy el primer parrafo</p>
+          <p>Soy el segundo parrafo</p>
+          <p>Soy el tercer parrafo</p>
+        </div>
+      </div>
+      <!-- .grupo -->
+
+      <!-- .grupo>h2{Primer y último elemento según tipo}+.elementos>div+p+span+p+div+div -->
+      <div class="grupo">
+        <h2>Primer y último elemento según tipo</h2>
+        <div class="elementos">
+          <h5>Soy el primer h5</h5>
+          <div>Hola soy un div</div>
+          <p>Soy el primer parrafo</p>
+          <span>Hola soy un span</span>
+          <p>P del medio</p>
+          <p>P del medio</p>
+          <p>P del medio</p>
+          <p>P del medio</p>
+          <div>Soy el anteúltimo div</div>
+          <div>Soy el último div</div>
+          <p>Soy el último parrafo</p>
+        </div>
+      </div>
+      <!-- .grupo -->
+
+      <!-- .grupo>h2{:nth-child() / :nth-last-child()}+ul.lista>li*8{Soy la opción #$} -->
+      <div class="grupo">
+        <h2>:nth-child() / :nth-last-child()</h2>
+        <ul class="lista">
+          <li>Soy la opción #1</li>
+          <li>Soy la opción #2</li>
+          <li>Soy la opción #3</li>
+          <li>Soy la opción #4</li>
+          <li>Soy la opción #5</li>
+          <li>Soy la opción #6</li>
+          <li>Soy la opción #7</li>
+          <li>Soy la opción #8</li>
+        </ul>
+      </div>
+      <!-- .grupo -->
+      .grupo>h2{:nth-of-type() | :nth-last-of-type()}+.lista-grupo>div+p+h4+p+span+h4+p+div+h4
+      <div class="grupo">
+        <h2>:nth-of-type() | :nth-last-of-type()</h2>
+          <div class="lista-grupo">
+            <div>Soy un div</div>
+            <p>Soy un parrafo</p>
+            <h4>Soy el primer h4</h4>
+            <p>Soy otro parrafo</p>
+            <span>Soy otro span</span>
+            <h4>Soy otro h4</h4>
+            <p>Soy un parrafo más</p>
+            <div>Soy un div</div>
+            <h4>Soy el último h4</h4>
+          </div>
+        
+      </div>
+
+
+
+
+    </div>
+    <!-- .contenedor -->
+
+
+
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
