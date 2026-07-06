@@ -30,31 +30,31 @@ body {
   display: grid;
   margin: 2rem; /* 32px */
   background-color: #ffeadd;
-  /* entre los tracks tengo las lines (líneas */
-  /* ? GRILLAS EXPLICITAS */
-  /* * DEFINIMOS NOSOTROS (MANUALES) las columnas y filas */
-  /* ! columnas (tracks) */
-  /* grid-template-columns: 5rem 5rem 5rem 5rem; */
-  /* una nueva unidad -> fracción -> 1fr | .5fr | 3fr */
-  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
-  /* grid-template-columns: repeat(5, 1fr); */
-  /* grid-template-columns: 1fr 1fr 2fr 2fr 2fr; */
-  grid-template-columns: repeat(2, 1fr) repeat(3, 2fr);
 
-  /* ! filas (tracks) */
-  /* grid-template-rows: 1fr 1fr 2fr; */
-  grid-template-rows: repeat(2, 1fr) 2fr 3fr;
+  /* ? GRILLAS EXPLICITAS */
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(2, 200px);
 
   /* ? GRILLAS IMPLICITAS (GRILLAS QUE SE CREAN AUTOMATICAMENTE) */
-  grid-auto-rows: 3fr 5fr;
+  grid-auto-rows: 2fr 1fr 3fr;
   grid-auto-columns: 5fr;
 
+  gap: 0.5rem;
 
-  /* Me permite agregarle espacios entre elementos. */
-  /* column-gap: .5rem;
-  row-gap: .5rem; */
-  gap: .5rem;
+  /* * content (toda la grilla) */
+  /* * items (cada celda) */
+  /* ! manejo horizontal */
+  justify-content: center; /* start (default) | end | center |  space-between |space-around | space-evenly */
+  justify-items: stretch; /* stretch (default) | start | end | center */
+
+  /* ! manejo vertical */
+  align-content: center; /* start (default) | end | center |  space-between |space-around | space-evenly */
+  align-items: stretch; /* stretch (default) | start | end | center */
+
+  height: 600px; /* no se le pone alto a la grilla */
 }
+
+/* https://cssgridgarden.com/#es */
 
 .elemento {
   background-color: #ff6666;
@@ -64,4 +64,45 @@ body {
   /*   flex-wrap: wrap;
   align-content: center; */
   /* margin-right: 10px; */ /* ! NO */
+}
+
+.elm1,
+.elm2,
+.elm3,
+.elm4,
+.elm5,
+.elm6,
+.elm7,
+.elm8 {
+  width: 5rem;
+  height: 5rem;
+}
+
+.elm1 {
+  justify-self: start;
+  align-self: start;
+}
+
+.elm2 {
+  justify-self: end;
+  align-self: end;
+}
+
+.elm3 {
+  justify-self: center;
+  align-self: center;
+}
+
+.elm4 {
+  /* horizontal */
+  justify-self: center;
+  /* vertical */
+  align-self: end;
+}
+
+.elm5 {
+  /* horizontal */
+  justify-self: start;
+  /* vertical */
+  align-self: center;
 }
