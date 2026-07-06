@@ -24,3 +24,100 @@ html {
 body {
   background-color: var(--color-fondo-base, red); /* var(varible, fallback) */
 }
+/* desktop first */
+/* .contenedor {
+  display: grid;
+  margin: 1rem;
+  background-color: #ffeadd;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "cabecera cabecera cabecera cabecera"
+    "principal principal principal lateral"
+    "principal principal principal lateral"
+    "principal principal principal lateral"
+    "pie pie pie pie";
+} */
+
+/* celular */
+/* @media (max-width: 600px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "cabecera"
+      "principal"
+      "principal"
+      "principal"
+      "pie";
+  }
+
+  .elm3 {
+    display: none;
+  }
+} */
+
+/* mobile first ------------------------------ */
+.contenedor {
+  display: grid;
+  margin: 1rem;
+  background-color: #ffeadd;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "cabecera"
+    "principal"
+    "principal"
+    "principal"
+    "pie";
+}
+
+.elm3 {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .contenedor {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "cabecera cabecera cabecera cabecera"
+      "principal principal principal lateral"
+      "principal principal principal lateral"
+      "principal principal principal lateral"
+      "pie pie pie pie";
+  }
+  .elm3 {
+    display: block;
+  }
+}
+
+/* Definiendo ÁREAS */
+.elm1 {
+  /* header */
+  background-color: darkorchid;
+  grid-area: cabecera;
+}
+
+.elm2 {
+  /* main */
+  background-color: darkorange;
+  grid-area: principal;
+}
+
+.elm3 {
+  /* aside */
+  background-color: darkkhaki;
+  grid-area: lateral;
+}
+
+.elm4 {
+  /* footer */
+  background-color: darksalmon;
+  grid-area: pie;
+}
+
+@media (min-width: 900px) {
+  .elm1 {
+    background-color: blue;
+  }
+}
