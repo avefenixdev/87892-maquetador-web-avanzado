@@ -24,3 +24,58 @@ html {
 body {
   background-color: var(--color-fondo-base, red); /* var(varible, fallback) */
 }
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover; /* background-size <-- decoración -> url() */
+  object-position: center; /* background-position <-- decoración -> url() */
+}
+
+.contenedor {
+  display: grid;
+  /*             rows     / columns */
+  grid-template: repeat(1, 1fr) / repeat(4, 1fr);
+  padding: 2rem;
+
+  gap: 2.25rem;
+
+  grid-auto-flow: column dense;
+  /* row (default) organiza los elementos en filas de izquierda a derecha y luego pasa a la siguiente fila */
+  /* column organiza los elementos en columnas, de arriba hacia abajo y luego pasa a la siguiente column */
+}
+
+.galeria__imagen {
+  border-radius: 1rem;
+}
+
+.gal3 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.gal6 {
+  /* grid-row-start: 2;
+  grid-row-end: 2; */
+  grid-row: 2 / 2;
+  /* grid-column-start: 2;
+  grid-column-end: 5; */
+  grid-column: 2 / span 3;
+}
+
+.gal4 {
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.gal5 {
+  grid-row-start: 3;
+  grid-row-end: 3;
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+  /* grid-column: 1 / 3; */
+  grid-column: 1 / span 2;
+}
