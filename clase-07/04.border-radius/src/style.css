@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Reset (Reinicia los estilos por defecto del navegador) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid crimson; */
+}
+/* Custom properties (Variables globales a toda la hoja de estilos) */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties */
+:root {
+  --ciento-por-ciento: 100%;
+  --color-fondo-base: #eee;
+  --tamanio-base: 2em;
+  --rosa-clarito: #e4a8b2;
+}
+
+/* etiqueta */
+html {
+  font-size: var(--ciento-por-ciento); /* 16px */
+}
+
+body {
+  background-color: var(--color-fondo-base, red); /* var(varible, fallback) */
+}
+
+/* * Random Everything | helixquar.randomeverything */
+/* * Increment Selection | albymor.increment-selection */
+
+.box--1 {
+  background-color: #951eae;
+}
+.box--2 {
+  background-color: #431f7a;
+}
+.box--3 {
+  background-color: #5bb603;
+}
+.box--4 {
+  background-color: #813341;
+}
+.box--5 {
+  background-color: #47a6a0;
+}
+.box--6 {
+  background-color: #0bca95;
+}
+.box--7 {
+  background-color: #f99caa;
+}
+.box--8 {
+  background-color: #9e989f;
+}
+.box--9 {
+  background-color: #b1a85d;
+}
+.box--10 {
+  background-color: #d2d5c7;
+}
