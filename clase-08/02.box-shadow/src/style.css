@@ -27,24 +27,42 @@ body {
 
 .box--1 {
   background-color: #4161aa;
+  /* box-shadow -> Le agrego una sobra a la caja */
+  /*          horizontal-x vertical-y color */
+  box-shadow: 20px 20px black;
 }
 .box--2 {
   background-color: #3b2681;
+  box-shadow: 20px 20px rgba(0, 0, 0, 0.5);
 }
 .box--3 {
   background-color: #935240;
+  /* box-shadow -> Le agrego una sobra a la caja */
+  /*          horizontal-x vertical-y difumidado color  */
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
 }
 .box--4 {
   background-color: #fd9e25;
+  box-shadow: -20px -20px 20px rgba(0, 0, 0, 0.5);
 }
 .box--5 {
   background-color: #4c1afd;
+  /*          horizontal-x vertical-y difumidado proyeccion(expansion/reducción) color  */
+  box-shadow: 20px 20px 20px 10px rgba(0, 0, 0, 0.5);
 }
 .box--6 {
   background-color: #08571c;
+  /*          horizontal-x vertical-y difumidado proyeccion(expansion/reducción) color  */
+  box-shadow: 40px 40px 20px -50px rgba(0, 0, 0, 0.5);
 }
+
 .box--7 {
   background-color: #25a8a2;
+  /* sombra interna */
+  /* https://www.cssmatic.com/es/box-shadow */
+  box-shadow: inset 10px 10px 5px 5px rgba(0, 0, 0, 0.5),
+              20px 20px 10px 10px rgba(255, 0, 0, 0.501);
+
 }
 .box--8 {
   background-color: #12e2c0;
