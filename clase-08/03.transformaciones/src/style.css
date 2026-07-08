@@ -1,0 +1,72 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contenedor {
+  background-color: darkolivegreen;
+  height: 30rem;
+  width: 90%;
+  margin: 3rem auto;
+  outline: .5rem solid black; /* No ocupa espacio dentro del modelo de caja */
+  /* border: 1rem solid red; */
+}
+
+.elemento {
+  background-color: chocolate; /* estado inicial */
+  width: 10rem;
+  color: #eee;
+  padding: 2rem;
+
+  transition: 1s all; /* El eleemnto base (estados iniciales) */
+
+  /* ! Transform */
+  /* La propiedadad 'transform' va sobre el que quiero transformar */
+  /* * translate -> Traslada en 3 ejes al elemento */
+  /* transform: translate(); */ /* 2d */
+  /* transform: translate3d(); */ /* 3d */
+  /* transform: translateZ(); */ /* No voy a verlo */
+  /* valor inicial de transoform -> x:0 y:0 */ /* estado inicial */
+
+  /* * rotate */
+  /* grados [0-360] -> deg */ /* ! */
+  /* radians [0-6.28] -> rad */
+  /* gradians [0-400] -> grad */
+  /* vueltas [0-infinito] (numeros decimales) turn ->  */ /* ! */
+  /* 180deg -> 3.14rad -> 200grad -> .5turn */
+  /* 360deg -> 6.28rad -> 400grad -> 1turn */
+  /* transform: rotate(); */ /* 2d -> 2 ejes*/
+  /* transform: rotate3d(); */ /* 3d -> 3 ejes */
+  /* transform: rotateX(45deg); */ /* ! NO */
+  /* transform: rotateY(45deg); */ /* ! NO */
+  /* transform: rotateZ(0deg); */ /* valor inicial */
+
+  /* scale */
+  /* transform: scale(); */ /* 2d */
+  /* transform: scale3d(); */ /* 3d */
+  /* transform: scale(0, 0);  *//* valor inicial */
+  
+  
+}
+
+.contenedor:hover .elemento {
+  background-color: gold; /* estado final */
+  /* transform: translateX(200px) translateY(100px); */ /* estado final */
+  /*                     x     y */
+  /* transform: translate(200px, 100px); */
+  /* transform: translateZ(-400px); */
+ /*  transform: rotateZ(50deg); */ /* valor final */
+  /* transform: rotateZ(3turn); */
+  transform: scale(50%, 50%); /* valor final */
+  transform: translateX(400px) scale(50%, 50%) rotateZ(2turn); /* valor final */
+}
