@@ -27,34 +27,65 @@ body {
 
 /* * Random Everything | helixquar.randomeverything */
 /* * Increment Selection | albymor.increment-selection */
+/* * cipchk.cssrem | px to rem & rpx & vw (cssrem) */
+
+.box {
+  background-color: purple;
+  width: 12.5rem;
+  height: 12.5rem;
+  margin: .625rem;
+  color: white;
+  text-align: center;
+  padding: 1.25rem;
+  float: left; /* Propiedad antigua de css */
+}
 
 .box--1 {
-  background-color: #951eae;
+  background-color: #2eb6d1;
+  border-radius: 1.25rem; /* shorthand */
 }
 .box--2 {
-  background-color: #431f7a;
+  background-color: #1a6388;
+  border-top-left-radius: 1.5625rem;
+  border-top-right-radius: 1.5625rem;
 }
 .box--3 {
-  background-color: #5bb603;
+  background-color: #a7eec3;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 35px;
 }
 .box--4 {
-  background-color: #813341;
+  background-color: #809293;
+  /* igual que con margin/padding pero rotado hacia la izquierda 45 grados. */
+  /* Sentido horario sería -> ar-izq -> ar-der -> ab-der -> ab-izq */
+  /*             ar-izq ar-der ab-der ab-izq */
+  border-radius: 20px 15px 35px 5px; /* shorthand */
 }
 .box--5 {
-  background-color: #47a6a0;
+  background-color: #10fbe7;
+  /* ciculo */
+  border-radius: 50%;
+  /* border-radius: 100px; */
+
 }
 .box--6 {
-  background-color: #0bca95;
+  background-color: #b705dc;
+  /* border-radius: 25px; */
+  /* border-radius: 25px / 25px; */
+  /*             all-x  / all-y */
+  border-radius: 100px / 30px;
 }
 .box--7 {
-  background-color: #f99caa;
+  background-color: #8a6f05;
 }
 .box--8 {
-  background-color: #9e989f;
+  background-color: #7c3936;
 }
 .box--9 {
-  background-color: #b1a85d;
+  background-color: #b0aaa9;
 }
 .box--10 {
-  background-color: #d2d5c7;
+  background-color: #b80786;
 }
