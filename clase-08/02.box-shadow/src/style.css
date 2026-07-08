@@ -65,7 +65,14 @@ body {
 
 }
 .box--8 {
-  background-color: #12e2c0;
+  background-image: url('/baby.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow:  inset 5px 4px 7px -2px rgb(0 0 0 / 30%), 
+              -20px 8px 0 #6528f7, 
+              16px 20px 0 -4px #d7bbf5, 
+              9px -16px 0 -4px #ede4ff;
 }
 .box--9 {
   background-color: #f68d66;
@@ -73,3 +80,7 @@ body {
 .box--10 {
   background-color: #637896;
 }
+
+/* https://box-shadow.dev/ */
+/* https://html-css-js.com/css/generator/box-shadow/ */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_backgrounds_and_borders/Box-shadow_generator */
