@@ -79,12 +79,19 @@ body {
 }
 .box--7 {
   background-color: #8a6f05;
+  border-radius: 25px 50px 20px 10px;
+ /*  border-radius: 25px 50px 20px 10px / 25px 50px 20px 10px; */
 }
 .box--8 {
   background-color: #7c3936;
+  /*             ar-izq-x ar-der-x ab-der-x ab-izq-x / ar-izq-y ar-der-y ab-der-y ab-izq-y   */
+  border-radius: 25px 50px 20px 10px / 12.5px 25px 10px 5px;
 }
 .box--9 {
-  background-color: #b0aaa9;
+  /* https://9elements.github.io/fancy-border-radius/#52.46.78.66--. */
+  background: #2A7B9B;
+  background: linear-gradient(5deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+  border-radius: 46% 54% 34% 66% / 52% 78% 22% 48%;
 }
 .box--10 {
   background-color: #b80786;
