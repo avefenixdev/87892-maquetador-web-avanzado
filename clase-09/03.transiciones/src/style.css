@@ -72,3 +72,47 @@ body {
   background-color: darkred; /* valor final */
   /*  display: block; */ /* valor final */
 }
+
+/* 
+
+Las transiciones/animaciones requiren de recursos del sistema.
+Hay que cuidar los recursos del sistema se debe conocer el proceso de renderizado que hacen los navegador.
+Usar (transform y opacity) Ocupan muchos menos recursos
+
+PROCESO DE RENDERIZADO (BROWSER)
+
+1. JavaScript/CSS
+2. LAYOUT
+3. PAINT
+4. COMPOSITE
+
+4. COMPOSITE -> Se encarga de dar el orden adecuado a las capas del navegador, hace referencia a elementos que no necesitan de layout o paint. (Transformaciones)
+
+* Da el orden a las capas en el navegador
+* Combina y dibuja las capas en pantalla
+
+Si se modifica una propiedad en la que no requiere (layout) ni pintura (paint), el navegador la omite y continua la composición. Esta versión final es la más economica y la ideal para puntos de presion de alto ciclo de la aplicación.
+
+3. PAINT -> La pintura es el proceso de rellenar los pixeles. Esto implica dibujar textos, colores, imagenes, bordes y sombras. Basicamente todas las partes visuales de los elementos
+
+Si cambiamos una propiedad de PAINT, como una imagen de fondo, color de texto o sombras (es, una que no afecta el diseño (layout) de la página) el nevegador omite el diseño pero realiza la printura de todos modos.
+
+2. LAYOUT -> Es el proceso a través del cual el navegador decifra la informacion geometrica de los elementos, su tamaño y ubicación en la página. El width, height
+
+Si modifico una propiedad del 'layout', dicha propiedad la geometria de un elemento (como su ancho, la altura o su posicion en x o y). El navegador debera verificar todos los otros elementos y 'redistribuirlos' en la página. Las afectatadas se deberan volver a pintar, y los elementos pintados finales deberan volver a componer el conjuntos.
+
+1. JavaScript/CSS
+
+/* 
+* Procurar propiedades que solo actuen o modifiquen composite
+* Evitar usar animaciones simultaneas
+* Procuerar el uso Transform y Opacity
+*/
+
+/* https://developer.mozilla.org/es/docs/Web/Performance */
+/* https://web.dev/articles/rendering-performance?hl=es-419 */
+/* https://web.dev/articles/simplify-paint-complexity-and-reduce-paint-areas?hl=es-419 */
+/* https://mdbootstrap.com/docs/standard/content-styles/animations/ */
+/* https://animate.style/ */
+/* https://michalsnik.github.io/aos/ */
+/* https://cubic-bezier.com/#.17,.67,.83,.67 */
