@@ -33,20 +33,29 @@ body {
   color: #eee;
   padding: 8px;
   border: 0.25rem solid darkblue; /* valor inicial */
-  display: none; /* valor inicial */
+  /* display: none; */ /* valor inicial */
 
   /* !IMPORTANTE: transition va sobre el elemento */
   transition-duration: 3s;
   /* transition-timing-function: linear;  */ /* defecto-evitamos */
   /* transition-timing-function: *ease *ease-in-out ease-in ease-out; */
-  transition-timing-function: ease-in-out; /* recomedable */
+  transition-timing-function: cubic-bezier(
+    0.9,
+    -0.33,
+    0.17,
+    1.32
+  ); /* recomedable */
   transition-delay: 0s;
   transition-property: display, width, background-color; /* Evitar el (all) */
-  transition-behavior: allow-discrete; /* default -> normal */
+  transition-behavior: normal; /* default -> normal */
+
+  /* ! shorthand */ /* las propiedades duration y delay necesitan la unidad (segundos -> s) */
+  /* transition: [transition-property] [transition-duration] [transition-timing-function] [transtion-behavior] [transition-delay];
+  */
 
   /* transition:
-    width 2s ease-in-out 0s,
-    background-color 10s ease-in-out 5s; */
+    width 2s ease-in-out normal 0s,
+    background-color 10s ease-in-out normal 5s; */
 }
 
 /* 1000ms -> 1seg | 60seg -> 1min */
@@ -55,9 +64,11 @@ body {
 /* allow-discrete -> permite transicionar las propiedades que no se podían transicionar. */
 
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transition-behavior */
+/* https://m3.material.io/foundations */
+/* https://github.com/material-components */
 
 .contenedor:hover .elemento1 {
   width: 320px; /* valor final */
   background-color: darkred; /* valor final */
-  display: block; /* valor final */
+  /*  display: block; */ /* valor final */
 }
