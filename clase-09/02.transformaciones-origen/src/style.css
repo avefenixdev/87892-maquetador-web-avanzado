@@ -1,0 +1,41 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+.contenedor {
+  background-color: darkolivegreen;
+  height: 30rem;
+  width: 90%;
+  margin: 3rem auto;
+  outline: 0.5rem solid black; /* No ocupa espacio dentro del modelo de caja */
+  /* border: 1rem solid red; */
+}
+
+.elemento {
+  background-color: chocolate; /* estado inicial */
+  width: 10rem;
+  color: #eee;
+  padding: 2rem;
+
+  transition: 1s all; /* El eleemnto base (estados iniciales) */
+  /*                x  y */
+  transform-origin: 0 50%;
+}
+
+.contenedor:hover .elemento {
+  background-color: gold; /* estado final */
+  transform: rotateZ(95deg);
+}
