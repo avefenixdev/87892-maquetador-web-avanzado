@@ -17,3 +17,47 @@ body {
 
 /* https://cssreference.io/ */
 /* https://htmlreference.io/ */
+
+.contenedor {
+  background-color: slateblue;
+  height: 640px;
+  width: 90%; /* 90% del body */
+  margin: 48px auto;
+  outline: 8px solid black;
+}
+
+.elemento1 {
+  background-color: lightcoral; /* valor inicial */
+  width: 160px; /* valor inicial */
+  height: 160px;
+  color: #eee;
+  padding: 8px;
+  border: 0.25rem solid darkblue; /* valor inicial */
+  display: none; /* valor inicial */
+
+  /* !IMPORTANTE: transition va sobre el elemento */
+  transition-duration: 3s;
+  /* transition-timing-function: linear;  */ /* defecto-evitamos */
+  /* transition-timing-function: *ease *ease-in-out ease-in ease-out; */
+  transition-timing-function: ease-in-out; /* recomedable */
+  transition-delay: 0s;
+  transition-property: display, width, background-color; /* Evitar el (all) */
+  transition-behavior: allow-discrete; /* default -> normal */
+
+  /* transition:
+    width 2s ease-in-out 0s,
+    background-color 10s ease-in-out 5s; */
+}
+
+/* 1000ms -> 1seg | 60seg -> 1min */
+/* transition-behavior -> propiedades que antes no podía animarse ahora si pueden (display|visibility) */
+/* normal -> Valor por defecto -> las propiedades display y visibility siguen sin poder transicionarse */
+/* allow-discrete -> permite transicionar las propiedades que no se podían transicionar. */
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transition-behavior */
+
+.contenedor:hover .elemento1 {
+  width: 320px; /* valor final */
+  background-color: darkred; /* valor final */
+  display: block; /* valor final */
+}
